@@ -3,6 +3,21 @@
   "siteName": "호텔스닷컴 할인코드 및 쿠폰",
   "baseUrl": "https://lvhts.agd-offer.co.kr",
   "postUrlPattern": "/blog/{slug}/",
-  "updated": "2026-09-23",
-  "posts": []
+  "updated": "2026-09-26",
+  "posts": [
+    {
+      "title": "호텔스닷컴 할인코드 사용 시 적립 가능 여부 확인하는 방법",
+      "slug": "hotels-com-discount-code-points-check",
+      "date": "2026-09-26",
+      "description": "호텔스닷컴 할인코드를 쓸 때 적립금이 함께 쌓이는지 예약 화면에서 확인하는 방법과 코드별 조건을 정리했습니다.",
+      "image": "https://images.unsplash.com/photo-1558959357-685f9c7ace7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDc5NTczfDB8MXxzZWFyY2h8MXx8aG90ZWwlMjByZXNlcnZhdGlvbiUyMHNjcmVlbiUyMGxhcHRvcHxlbnwxfDB8fHwxNzkwNDI1MzU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageCredit": {
+        "source": "unsplash",
+        "authorName": "Proxyclick Visitor Management System",
+        "authorUrl": "https://unsplash.com/@proxyclick?utm_source=blog-admin&utm_medium=referral",
+        "photoUrl": "https://unsplash.com/photos/person-about-to-touch-black-android-tablet-computer-VnACB-m22es?utm_source=blog-admin&utm_medium=referral",
+        "siteUrl": "https://unsplash.com?utm_source=blog-admin&utm_medium=referral"
+      }
+    }
+  ]
 }
