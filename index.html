@@ -154,7 +154,17 @@ body{margin:0;background:#fff;color:var(--hsx-ink);font-family:-apple-system,Bli
 .hsx-foot li a:hover{text-decoration:underline}
 .hsx-foot-bottom{max-width:960px;margin:24px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:13px;color:#9cc7d9}
 .hsx-foot-bottom a{color:#fff;font-weight:700;text-decoration:none}
+.hsx-pages{margin:12px 0 0;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.hsx-pages::-webkit-scrollbar{display:none}
+.hsx-pages ul{list-style:none;margin:0;padding:0;display:flex;gap:6px;width:max-content}
+.hsx-pages a{display:block;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3);font-size:13px;font-weight:800;color:#fff;text-decoration:none;white-space:nowrap}
+.hsx-pages a:hover{border-color:#9cc7d9;color:#9cc7d9}
+.hsx-pages a[aria-current="page"]{background:#9cc7d9;border-color:#9cc7d9;color:#0f2a38}
+.hsx-foot-links{max-width:960px;margin:28px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:1.4fr 1fr;gap:20px 28px}
+.hsx-foot-links ul{display:flex;flex-wrap:wrap;gap:0 16px}
+.tdk-more{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px}
 @media (max-width:760px){
+.hsx-foot-links{grid-template-columns:1fr}
 .hsx-top{padding-top:34px}
 .hsx-top h1{font-size:27px}
 .hsx-top-stats{grid-template-columns:1fr 1fr}
@@ -708,6 +718,9 @@ body{margin:0;background:#fff;color:var(--hsx-ink);font-family:-apple-system,Bli
 <header class="hsx-top" id="top">
 <div class="hsx-top-in">
 <p class="hsx-brand">lvhts.agd-offer.co.kr</p>
+<nav class="hsx-pages" aria-label="페이지 메뉴">
+<ul><li><a href="./" aria-current="page">홈</a></li><li><a href="discount-coupon/">호텔스닷컴 할인쿠폰</a></li><li><a href="promo-code/">호텔스닷컴 할인코드</a></li></ul>
+</nav>
 <h1>호텔스닷컴 쿠폰</h1>
 <p class="hsx-top-lead">호텔스닷컴(Hotels.com) 쿠폰 코드 6종, 카드 할인 14종, 회원 세일·기획전 할인 쿠폰을 조건과 적용 순서까지 한 페이지에 정리했습니다.</p>
 <dl class="hsx-top-stats">
@@ -840,6 +853,7 @@ body{margin:0;background:#fff;color:var(--hsx-ink);font-family:-apple-system,Bli
 <li><p class="tdk-tp">2027년 7월 1일 이후 투숙</p><p class="tdk-tc">적용 가능한 코드 없음</p><p class="tdk-td">투숙 기간이 공개된 네 코드 모두 기간 밖입니다. LP08은 결제 단계에서 적용 여부를 확인해야 합니다.</p></li>
 </ol>
 
+<p class="tdk-more"><a class="tdk-btn tdk-btn-line" href="discount-coupon/">호텔스닷컴 할인쿠폰 전체 보기</a> <a class="tdk-btn tdk-btn-line" href="promo-code/">호텔스닷컴 할인코드 전체 보기</a></p>
 
 
 </div>
@@ -1358,7 +1372,7 @@ body{margin:0;background:#fff;color:var(--hsx-ink);font-family:-apple-system,Bli
 .upd-log-list li{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-top:1px solid rgba(var(--upd-rgb),.14)}
 .upd-log-list li:first-child{border-top:0}
 .upd-log-list time{flex:0 0 auto;font:800 12.5px/1.6 ui-monospace,Menlo,Consolas,monospace;color:var(--upd-c)}
-.upd-log-list p{font-size:14px;line-height:1.6}
+.upd-log-list p{font-size:14px;line-height:1.6;min-width:0;overflow-wrap:anywhere}
 @media (max-width:640px){.upd-log-title{font-size:19px}.upd-log-list li{flex-direction:column;gap:2px}}
 </style>
 </main>
@@ -1381,6 +1395,18 @@ body{margin:0;background:#fff;color:var(--hsx-ink);font-family:-apple-system,Bli
 <ul><li><a href="https://app.ac/utw0WqM33" target="_blank" rel="nofollow sponsored noopener">호텔스닷컴 쿠폰 코드 받기</a></li><li><a href="https://app.ac/utw0WqM33" target="_blank" rel="nofollow sponsored noopener">호텔스닷컴 카드 할인 받기</a></li></ul>
 </div>
 </div>
+<!--@FOOTER-LINKS-->
+<div class="hsx-foot-links">
+<div>
+<p class="hsx-foot-t">카드사별 할인</p>
+<ul><li><a href="nh-card/">NH농협카드</a></li><li><a href="kb-card/">KB국민카드</a></li><li><a href="hyundai-card/">현대카드</a></li><li><a href="hana-card/">하나카드</a></li><li><a href="bc-card/">BC카드</a></li><li><a href="woori-card/">우리카드</a></li><li><a href="tossbank-card/">토스뱅크카드</a></li><li><a href="lotte-card/">롯데카드</a></li><li><a href="samsung-card/">삼성카드</a></li><li><a href="visa-card/">비자카드</a></li><li><a href="mastercard-card/">마스터카드</a></li><li><a href="amex-card/">아멕스카드</a></li></ul>
+</div>
+<div>
+<p class="hsx-foot-t">다른 할인코드</p>
+<ul><li><a href="tripcom/">트립닷컴 할인코드</a></li><li><a href="agoda/">아고다 할인코드</a></li><li><a href="klook/">클룩 할인코드</a></li><li><a href="myrealtrip/">마이리얼트립 할인코드</a></li><li><a href="usimsa/">유심사 할인쿠폰</a></li><li><a href="kkday/">kkday 할인코드</a></li><li><a href="rakutentravel/">라쿠텐트래블 할인코드</a></li></ul>
+</div>
+</div>
+<!--@/FOOTER-LINKS-->
 <div class="hsx-foot-bottom"><span>© 호텔스닷컴 쿠폰</span><a href="#top">맨 위로</a></div>
 </footer>
 </body>
